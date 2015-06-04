@@ -15,7 +15,7 @@
             var $this = $(this);
 
             $this.addClass(npl_class).data({
-                nplmodalGalleryId : '!',
+                // nplmodalGalleryId : '!',
                 nplmodalImageId : $this.find('img').attr('id')
             });
         }).nplModal(window.nplModalSettings);
