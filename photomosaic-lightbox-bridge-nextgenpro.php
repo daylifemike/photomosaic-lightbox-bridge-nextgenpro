@@ -5,7 +5,7 @@
     Description: Use NextGen Pro Lightbox as your PhotoMosaic lightbox.  Requires the <strong>NextGen Pro Lightbox</strong> plugin (which can be purchased using the "Lightbox Plugin Details" link to the left).
     Author: Michael Kafka
     Author URI: http://www.codecanyon.net/user/makfak?ref=makfak
-    Version: 0.2
+    Version: 0.3
     GitHub Plugin URI: daylifemike/photomosaic-lightbox-bridge-nextgenpro
 */
 

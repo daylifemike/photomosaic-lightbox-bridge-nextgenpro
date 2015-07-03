@@ -8,16 +8,41 @@
             return false;
         }
 
-        // var gallery_id = $mosaic.parent().data('photoMosaic')._id;
+        var mosaic_id = $mosaic.parent().data('photoMosaic')._id;
         var npl_class = 'nextgen_pro_lightbox';
+
+        if (!window.galleries) {
+            window.galleries = {};
+        }
 
         $items.each(function () {
             var $this = $(this);
+            var $img = $this.find('img');
+            var data = $this.data();
+            var gallery_id = "gallery_" + mosaic_id;
+            var image_id = $img.attr('id');
 
             $this.addClass(npl_class).data({
-                // nplmodalGalleryId : '!',
-                nplmodalImageId : $this.find('img').attr('id')
+                'nplmodal-gallery-id' : mosaic_id,
+                'nplmodal-image-id' : image_id
             });
+
+            if (!window.galleries[ gallery_id ]) {
+                window.galleries[ gallery_id ] = {
+                    ID : mosaic_id,
+                    images_list : [],
+                    display_settings : {}
+                };
+            }
+
+            window.galleries[ gallery_id ].images_list.push({
+                description : "",
+                image : $this.attr('href'),
+                image_id : image_id,
+                thumb : $img.attr('src'),
+                title : $this.attr('title')
+            });
+
         }).nplModal(window.nplModalSettings);
     }
 }(window));

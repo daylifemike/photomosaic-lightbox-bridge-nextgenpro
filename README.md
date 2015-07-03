@@ -1,6 +1,6 @@
 # PhotoMosaic : Lightbox Bridge : NextGen Pro Lightbox
 
-This plugin automatically configures **PhotoMosaic for WordPress** to use the [**NextGen Pro Lightbox**](https://wordpress.org/plugins/jquery-colorbox/) plugin.
+This plugin automatically configures **PhotoMosaic for WordPress** to use the **NextGen Pro Lightbox** plugin.
 
 Download the [.zip](https://github.com/daylifemike/photomosaic-lightbox-bridge-nextgenpro/archive/master.zip), upload it to your WordPress site, and activate.
 
